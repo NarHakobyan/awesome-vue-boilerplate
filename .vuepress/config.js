@@ -4,6 +4,7 @@ module.exports = {
                     ads in a few minutes.<br />
                     Target your audience by exploring our features and start
                     using the platform!`,
+  base: process.env.DEPLOY_ENV === 'gh-pages' ? '/awesome-vue-boilerplate/': '/',
   themeConfig: {
     sidebar: [
       ['/', 'Introduction'],
