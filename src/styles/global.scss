@@ -1,0 +1,84 @@
+@import 'tailwind';
+
+::-webkit-input-placeholder {
+  color: $--input-placeholder-color;
+}
+
+::-moz-placeholder {
+  color: $--input-placeholder-color;
+}
+
+:-ms-input-placeholder {
+  color: $--input-placeholder-color;
+}
+
+:-moz-placeholder {
+  color: $--input-placeholder-color;
+}
+
+a:-webkit-any-link {
+  color: $--color-primary;
+}
+
+body {
+  color: $--color-text-regular;
+  background-color: $--background-color-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.vue-tel-input {
+  border: 1px solid $--border-color-base !important;
+  border-radius: 0 !important;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: none !important;
+    border-color: $--color-primary !important;
+  }
+}
+
+.el-steps {
+  padding: 2rem 0 !important;
+
+  .el-step.is-simple .el-step__title {
+    font-size: 1.125rem !important;
+  }
+}
+
+.el-select .el-tag__close {
+  font-size: 1rem !important;
+  background-color: $--color-primary !important;
+}
+
+.el-select .el-tag--info .el-tag__close:hover {
+  background-color: $--color-primary !important;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: $--border-color-base;
+}
+.el-tooltip__popper {
+  max-width: 300px;
+  line-height: 1.5 !important;
+  box-shadow: $--box-shadow-light;
+}
+
+.el-table th, .el-table td {
+  padding-left: 10px !important;
+}
+.el-main .el-steps--simple {
+  background-color: unset !important;
+}
+
+
+.avatar-cropper canvas {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid $--border-color-base;
+}

@@ -1,0 +1,52 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+@import "~element-ui/packages/theme-chalk/src/common/var";
+
+//variables for base colors
+$--color-primary: #409EFF !default;
+$--color-success: #67c23a !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #f56c6c !default;
+$--color-info: #909399 !default;
+$--color-text-regular: #868ba1;
+$--color-success: $--border-color-base;
+$--background-color-base: #f0f2f7 !important;
+
+// variables for select tags
+$--tag-info-fill: $--color-primary !important;
+$--tag-info-border: $--color-primary !important;
+$--tag-info-color: $--color-white !important;
+$--tag-font-size: 14px !important;
+$--tag-border-radius: 0 !important;
+//
+
+// variables for tooltips
+$--tooltip-fill: $--border-color-base !important;
+
+// variables for borders
+$--border-color-base: #cdd4da;
+
+//variables for checkboxes
+$--checkbox-checked-text-color: $--color-text-regular;
+
+//variables for menu items
+$--menu-item-fill: #304156;
+$--menu-item-hover-fill: #263445;
+$--menu-item-color: #bfcbd9;
+
+//variable for font-path
+$--font-path: '~element-ui/packages/theme-chalk/src/fonts';
+
+//variables for cards
+$--card-padding: 0 ;
+
+//variables for inputs
+$--input-mini-height: 40px;
+$--input-border-radius: 0;
+
+//variables for tables
+$--table-header-color: #c4c6ca;
+

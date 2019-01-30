@@ -1,0 +1,32 @@
+{
+    "cSpell.words": [
+        "devtool",
+        "vuex"
+    ],
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.exclude": {
+        "**/*.log": true,
+        "**/*.log*": true,
+        "**/dist": true,
+        "**/coverage": true
+      },
+      "eslint.run": "onSave",
+      "eslint.validate": [
+        { "language": "javascript", "autoFix": true },
+        { "language": "javascriptreact", "autoFix": true },
+        { "language": "vue", "autoFix": true },
+        { "language": "vue-html", "autoFix": true },
+        { "language": "html", "autoFix": true }
+      ],
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.float": "warning",
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "scss.lint.duplicateProperties": "warning"
+}

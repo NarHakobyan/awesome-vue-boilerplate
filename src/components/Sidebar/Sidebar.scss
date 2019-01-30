@@ -1,0 +1,11 @@
+.menu-title {
+    margin-left: 10px;
+}
+.aside-vertical-menu {
+    height: 100%;
+
+    &:not(.el-menu--collapse) {
+        width: 200px;
+        min-height: 400px;
+    }
+}
