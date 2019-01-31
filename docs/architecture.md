@@ -4,6 +4,7 @@
   - [`_templates`](#templates)
   - [`.vscode`](#vscode)
   - [`docs`](#docs)
+  - [`.vuepress`](#vuepress)
   - [`public`](#public)
     - [`index.html`](#indexhtml)
   - [`src`](#src)
@@ -24,6 +25,9 @@
     - [`utils`](#utils)
     - [`App.vue`](#appvue)
     - [`main.js`](#mainjs)
+  - [`.env.*`](#env)
+  - [`.eslintrc.json`](#eslintrcjson)
+  - [`tailwind.js`](#tailwindjs)
 
 ## `_templates`
 
@@ -36,6 +40,10 @@ Settings and extensions specific to this project, for Visual Studio Code. See [t
 ## `docs`
 
 You found me! :wink:
+
+## `.vuepress`
+
+Documentation config and destination folder See [VuePress doc](https://vuepress.vuejs.org) for more
 
 ## `public`
 
@@ -118,3 +126,18 @@ The root Vue component that simply delegates to the router view. This is typical
 ### `main.js`
 
 The entry point to our app, were we create our Vue instance and mount it to the DOM.
+
+## `.env.*`
+
+Environment variables which will load before app start and will be stored in `process.env`, (*) is a env name (development, staging, production, ...)
+
+Note: each env variable name must be start with `VUE_APP_`
+
+## `.eslintrc.json`
+
+Eslint configuration file, See [the eslint doc](https://eslint.org/) for more.
+Note: each env variable name must be start with `VUE_APP_`
+
+## `tailwind.js`
+
+Configuration file for tailwindcss framework, See [tailwindcss doc](https://tailwindcss.com/docs) for more.
