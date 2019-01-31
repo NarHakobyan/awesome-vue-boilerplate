@@ -53,7 +53,7 @@
                 >{{ $t('keywords.login') }}</el-button>
                 <div class="py-5 text-sm">
                     <span class="mr-1">{{ $t('login.have_not_account') }}</span>
-                    <router-link :to="{ name: 'register' }">{{ $t('keywords.signUp') }}</router-link>
+                    <span>{{ $t('keywords.signUp') }}</span>
                 </div>
             </el-form>
         </div>

@@ -6,7 +6,7 @@
     "serve": "NODE_ENV=development vue-cli-service serve",
     "build:prd": "NODE_ENV=production vue-cli-service build",
     "build:stg": "NODE_ENV=production vue-cli-service build --mode staging",
-    "report": "vue-cli-service build --report --mode staging && static dist/report.html",
+    "report": "NODE_ENV=production vue-cli-service build --report --mode staging && static dist/report.html",
     "lint": "vue-cli-service lint",
     "new": "hygen new",
     "docs": "vuepress dev -p 7070",
