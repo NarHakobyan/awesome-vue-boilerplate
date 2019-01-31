@@ -27,16 +27,16 @@ yarn
 
 This project includes a `docs` folder with more details on:
 
-1.  [Setup and development](docs/development.md)
-1.  [Architecture](docs/architecture.md)
-1.  [Languages and technologies](docs/tech.md)
-1.  [Routing, layouts, and views](docs/routing.md)
-1.  [State management](docs/state.md)
-1.  [Tests and mocking the API](docs/tests.md)
-1.  [Linting and formatting](docs/linting.md)
-1.  [Editor integration](docs/editors.md)
-1.  [Building and deploying to production](docs/production.md)
-1.  [Troubleshooting](docs/troubleshooting.md)
+1.  [Setup and development](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/development.html)
+1.  [Architecture](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/architecture.html)
+1.  [Languages and technologies](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/tech.html)
+1.  [Routing, layouts, and views](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/routing.html)
+1.  [State management](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/state.html)
+1.  [Tests and mocking the API](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/tests.html)
+1.  [Linting and formatting](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/linting.html)
+1.  [Editor integration](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/editors.html)
+1.  [Building and deploying to production](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/production.html)
+1.  [Troubleshooting](https://narhakobyan.github.io/awesome-vue-boilerplate/docs/troubleshooting.html)
 
 ## FAQ
 
