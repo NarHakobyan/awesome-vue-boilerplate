@@ -21,17 +21,27 @@ export default {
         {
             title: 'App name',
             iconName: 'audio-description',
-            routeName: 'home',
+            route: {
+                name: 'home',
+                query: {},
+                params: {},
+            },
         },
         {
             title: 'nested Route',
             iconName: 'boxes',
-            routeName: 'currentRequests',
+            route: {
+                name: 'currentRequests',
+            },
             children: [
                 {
                     title: 'Messaging',
                     iconName: 'comment',
-                    routeName: 'messaging',
+                    route: {
+                        name: 'messaging',
+                        query: {},
+                        params: {},
+                    },
                 },
             ],
         },

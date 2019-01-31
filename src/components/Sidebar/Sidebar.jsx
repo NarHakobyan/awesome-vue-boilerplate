@@ -15,10 +15,10 @@ export default {
     },
     render(h, context) {
         function generateMenuItem(menuItem) {
-            const { title, iconName, routeName, children } = menuItem;
+            const { title, iconName, route, children } = menuItem;
             if (children) {
                 return (
-                    <el-submenu index={routeName}>
+                    <el-submenu index={route.index || route.name}>
                         <template slot="title">
                             {iconName && <v-icon name={iconName} />}
                             <span slot="title" class="menu-title">
@@ -30,7 +30,7 @@ export default {
                 );
             }
             return (
-                <el-menu-item onClick={() => context.listeners.select(menuItem)} index={routeName}>
+                <el-menu-item onClick={() => context.listeners.select(route)} index={route.index || route.name}>
                     {iconName && <v-icon name={iconName} />}
                     <span slot="title" class="menu-title">
                         {title}
