@@ -141,8 +141,8 @@ export default {
         },
     },
     methods: {
-        navbarClick({ routeName }) {
-            this.$router.push({ name: routeName });
+        navbarClick(route) {
+            this.$router.push(route);
         },
         handleCommand(command) {
             if (command === 'logout') {
