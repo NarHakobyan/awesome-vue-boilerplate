@@ -46,7 +46,6 @@ export default {
         pixels: 'pixels',
         placement: 'Placement',
         preview: 'Preview',
-        ad_text: 'Ad text',
         carousel: 'Carousel',
         single_image: 'Single image',
         single_video: 'Single video',
