@@ -109,7 +109,7 @@ Where we keep our [design variables and tooling](tech.md#design-variables-and-to
 
 ### `translations`
 
-Here we are store translation files of i18n.
+Here we are store translation files of i18n. in translation files is enabled [hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/)
 
 ### `store`
 
