@@ -1,4 +1,4 @@
-import { makeMutations, makeActions, makeGetters } from '@/utils/state.helper';
+import { makeMutations, makeActions, makeGetters } from '@/store/helpers/default.helper';
 
 const defaultState = {
     sidebar: {

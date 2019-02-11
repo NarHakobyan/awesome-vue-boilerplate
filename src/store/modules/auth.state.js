@@ -1,6 +1,6 @@
 import { commit } from 'vuex-pathify';
 import Auth from '@/resources/Auth';
-import { makeMutations, makeGetters, makeActions, withLoading } from '@/utils/state.helper';
+import { makeMutations, makeGetters, makeActions, withLoading } from '@/store/helpers/default.helper';
 
 const defaultState = {
     token: null,

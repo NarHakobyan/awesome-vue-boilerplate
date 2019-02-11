@@ -1,14 +1,15 @@
 # Architecture
 
 - [Architecture](#architecture)
-  - [`_templates`](#templates)
+  - [`_templates`](#_templates)
   - [`.vscode`](#vscode)
   - [`docs`](#docs)
   - [`.vuepress`](#vuepress)
   - [`public`](#public)
     - [`index.html`](#indexhtml)
   - [`src`](#src)
-    - [`styles`](#styles)
+  - [`styles`](#styles)
+    - [`imports`](#imports)
     - [`assets`](#assets)
     - [`common`](#common)
     - [`filters`](#filters)
@@ -18,10 +19,10 @@
     - [`plugins`](#plugins)
     - [`resources`](#resources)
     - [`components`](#components)
-    - [`styles`](#styles-1)
     - [`router`](#router)
     - [`translations`](#translations)
-    - [`store`](#store)
+  - [`store`](#store)
+    - [`modules`](#modules)
     - [`utils`](#utils)
     - [`App.vue`](#appvue)
     - [`main.js`](#mainjs)
@@ -57,9 +58,13 @@ This one file actually _does_ get processed by our build system, allowing us to 
 
 Where we keep all our source files.
 
-### `styles`
+## `styles`
 
 Where we keep our [design variables and tooling](tech.md#design-variables-and-tooling).
+
+### `imports`
+
+Styles which are stored to this folder will be automatically imported in each scss and component file
 
 ### `assets`
 
@@ -98,10 +103,6 @@ This folder contains [resource](https://github.com/pagekit/vue-resource/blob/dev
 
 Where most of the components in our app will live, including our [global base components](development.md#base-components).
 
-### `styles`
-
-Where we keep our [design variables and tooling](tech.md#design-variables-and-tooling).
-
 ### `router`
 
 Where the router, routes, and any routing-related. See [the routing doc](routing.md) for more.
@@ -111,9 +112,13 @@ Where we keep our [design variables and tooling](tech.md#design-variables-and-to
 
 Here we are store translation files of i18n. in translation files is enabled [hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/)
 
-### `store`
+## `store`
 
 Where all our global state management lives. See [the state management doc](state.md) for more.
+
+### `modules`
+
+Where all our vuex stores lives. See [vuex modules documentation](https://vuex.vuejs.org/guide/modules.html) for more.
 
 ### `utils`
 
