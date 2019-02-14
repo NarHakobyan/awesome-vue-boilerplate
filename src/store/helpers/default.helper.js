@@ -78,11 +78,13 @@ export function makeActions(defaultState, ...actions) {
  */
 export function withLoading(loaderName, handler) {
     return async (...args) => {
+        let data;
         await dispatch('wait/start', loaderName, { root: true });
         try {
-            await handler(...args);
+            data = await handler(...args);
         } finally {
             await dispatch('wait/end', loaderName, { root: true });
         }
+        return data;
     };
 }
