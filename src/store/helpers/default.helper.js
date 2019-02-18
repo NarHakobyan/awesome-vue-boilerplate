@@ -1,5 +1,6 @@
 'use strict';
 
+import debouncePromise from 'debounce-promise';
 import { make, dispatch } from 'vuex-pathify';
 import { set, get } from 'lodash';
 
@@ -77,14 +78,34 @@ export function makeActions(defaultState, ...actions) {
  * @returns {Function}
  */
 export function withLoading(loaderName, handler) {
-    return async (...args) => {
+    return withActions({ loader: loaderName }, handler);
+}
+
+/**
+ * Add actions to vuex action handler
+ * @param {{loader: string, debounce: boolean | number = true}} action
+ * @param handler
+ * @returns {Promise<(function(...[*]): *)>|(function(...[*]): *)}
+ */
+export function withActions(action, handler) {
+    const newHandlerFunction = async (...args) => {
         let data;
-        await dispatch('wait/start', loaderName, { root: true });
+        if (action.loader) {
+            await dispatch('wait/start', action.loader, { root: true });
+        }
         try {
             data = await handler(...args);
         } finally {
-            await dispatch('wait/end', loaderName, { root: true });
+            if (action.loader) {
+                await dispatch('wait/end', action.loader, { root: true });
+            }
         }
         return data;
     };
+    if (action.debounce) {
+        const debounceTime = action.debounce === true ? 300 : action.debounce;
+        return debouncePromise(newHandlerFunction, debounceTime);
+    }
+
+    return newHandlerFunction;
 }
