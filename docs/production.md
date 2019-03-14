@@ -1,20 +1,22 @@
-# Coming Soon
+# Building and deploying to production
 
-<!-- # Building and deploying to production
-
-- [Coming Soon](#coming-soon)
+- [Building and deploying to production](#building-and-deploying-to-production)
   - [From the terminal](#from-the-terminal)
-  - [From Circle CI](#from-circle-ci)
+  - [By docker-compose](#by-docker-compose)
 
 ## From the terminal
 
 ```bash
 # Build for production with minification
-yarn build
+yarn build:prd
 ```
 
 This results in your compiled application in a `dist` directory.
 
-## From Circle CI
+## By docker-compose
 
-Update `.circleci/config.yml` to automatically deploy to staging and/or production on a successful build. See comments in that file for details. -->
+```bash
+PROJECT_NAME=your_project PORT=8080 VERSION=0.0.1 docker-compose up -d
+```
+
+after building application will run on background in port 8080

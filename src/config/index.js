@@ -16,7 +16,6 @@ export default {
         'Marketing & Advertising',
         'Telecommunications',
     ],
-    reCaptchaKey: '6Le8soQUAAAAACSRt0-OkQTgdM-wyqmM_diqkSVl',
     asideMenu: [
         {
             title: 'App name',

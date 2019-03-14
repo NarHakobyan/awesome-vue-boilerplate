@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: "${PROJECT_NAME}:${VERSION}"
+    container_name: "${PROJECT_NAME}-frontend"
+    build: .
+    expose:
+      - "${PORT}"
+    ports:
+      - "${PORT}:80"
