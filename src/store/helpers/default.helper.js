@@ -2,7 +2,7 @@
 
 import debouncePromise from 'debounce-promise';
 import { make, dispatch } from 'vuex-pathify';
-import { set, get } from 'lodash';
+import { set, get, cloneDeep } from 'lodash';
 
 /**
  * make default state
@@ -32,14 +32,16 @@ export function makeMutations(defaultState, ...mutations) {
 
     data.resetState = (state, paths) => {
         if (!paths) {
-            Object.assign(state, defaultState);
+            Object.assign(state, cloneDeep(defaultState));
+            return;
         }
         for (const path of paths) {
-            set(state, path, get(defaultState, path));
+            set(state, path, cloneDeep(get(defaultState, path)));
         }
     };
     return data;
 }
+
 
 /**
  * make getters
