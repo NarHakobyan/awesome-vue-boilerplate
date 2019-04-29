@@ -9,6 +9,8 @@ const dictionary = {
             confirmed: () => 'Two passwords do not match',
             validatePhone: () => 'Please provide valid phone',
             isTermsChecked: () => 'Please accept account creation agreement and privacy statement!',
+            password_regex: () => 'This field must contain digits, letters or one of !@#$%^&* simbols',
+            username_regex: () => 'Login name format is not valid',
         },
     },
 };

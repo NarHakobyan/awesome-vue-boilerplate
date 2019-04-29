@@ -1,6 +1,6 @@
 'use strict';
 
-import { get } from 'lodash';
+import { get, find } from 'lodash';
 
 export const FormMixin = {
     provide() {
@@ -23,6 +23,9 @@ export const FormMixin = {
         markFormTouched() {
             for (const field of Object.values(this.$validator.flags)) {
                 field.touched = true;
+                const firstField = this.errors.items[0].field;
+                const element = find(this.$validator.fields.items, ['name', firstField]);
+                element.el.scrollIntoView();
             }
         },
     },

@@ -21,12 +21,7 @@
                 >
                     <el-input
                             v-model="loginForm.username"
-                            v-validate="{
-                        required: true,
-                        min: 2,
-                        max: 50,
-                        regex: usernameRegexp,
-                    }"
+                            v-validate="'required:true|min:2|max:50|username_regex'"
                             type="text"
                             name="username"
                             :placeholder="$t('login.login_placeholder')"
@@ -39,7 +34,7 @@
                         :error="getError('password')"
                 ><el-input
                         v-model="loginForm.password"
-                        v-validate="'required|min:6|max:12'"
+                        v-validate="'required|min:6|max:12|password_regex'"
                         type="password"
                         :placeholder="$t('login.password_placeholder')"
                         name="password"
@@ -74,7 +69,6 @@ export default {
                 username: '',
                 password: '',
             },
-            usernameRegexp: /^[a-zA-Z0-9-_']+$/i,
         };
     },
     methods: {

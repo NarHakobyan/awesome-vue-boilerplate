@@ -12,3 +12,17 @@ Validator.extend('isTermsChecked', {
         return value && value === true;
     },
 });
+
+Validator.extend('password_regex', {
+    validate: value => {
+        var strongRegex = new RegExp('^[a-zA-Z0-9!@#$%^&*]*$');
+        return strongRegex.test(value);
+    },
+});
+
+Validator.extend('username_regex', {
+    validate: value => {
+        var strongRegex = new RegExp("^[a-zA-Z0-9-_']+$");
+        return strongRegex.test(value);
+    },
+});
