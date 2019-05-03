@@ -13,7 +13,7 @@
                             class="no-redirect"
                     >{{ $t(`route.${item.meta.title}`) }}</span
                     >
-                <a v-else @click.prevent="handleLink(item)">{{
+                <a v-else class="text-blue" @click.prevent="handleLink(item)">{{
                     $t(`route.${item.meta.title}`)
                     }}</a>
             </el-breadcrumb-item>

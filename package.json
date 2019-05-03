@@ -19,7 +19,7 @@
     "lodash": "~4.17.11",
     "nprogress": "~0.2.0",
     "path-to-regexp": "~2.4.0",
-    "tailwindcss": "~0.7.3",
+    "tailwindcss": "^1.0.0-beta.8",
     "v-debounce": "^0.1.2",
     "vee-validate": "~2.1.5",
     "vue": "~2.5.21",

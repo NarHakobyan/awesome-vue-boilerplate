@@ -28,7 +28,7 @@
     - [`main.js`](#mainjs)
   - [`.env.*`](#env)
   - [`.eslintrc.json`](#eslintrcjson)
-  - [`tailwind.js`](#tailwindjs)
+  - [`tailwind.config.js`](#tailwindjs)
 
 ## `_templates`
 
@@ -143,6 +143,6 @@ Note: each env variable name must be start with `VUE_APP_`
 Eslint configuration file, See [the eslint doc](https://eslint.org/) for more.
 Note: each env variable name must be start with `VUE_APP_`
 
-## `tailwind.js`
+## `tailwind.config.js`
 
 Configuration file for tailwindcss framework, See [tailwindcss doc](https://tailwindcss.com/docs) for more.
