@@ -1,4 +1,5 @@
 # Awesome Vue Boilerplate
+[![Awesome Vue](https://img.shields.io/badge/Awesome-Vue-blue.svg?longCache=true&style=flat-square)](https://github.com/vuejs/awesome-vue)
 
 > This is an ever-evolving, very opinionated architecture and dev environment for new Vue SPA projects using [Vue CLI 3](https://github.com/vuejs/vue-cli).
 
