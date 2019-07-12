@@ -11,6 +11,7 @@ const dictionary = {
             isTermsChecked: () => 'Please accept account creation agreement and privacy statement!',
             password_regex: () => 'This field must contain digits, letters or one of !@#$%^&* simbols',
             username_regex: () => 'Login name format is not valid',
+            text_regex: () => 'Field format is not valid',
         },
     },
 };

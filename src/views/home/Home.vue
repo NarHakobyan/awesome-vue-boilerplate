@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-center items-center pt-32">
+    <div class="flex justify-center items-center pt-20">
         <div class="w-1/3">
-            <img src="@/assets/images/illustration.png" alt="computer">
+            <img src="@/assets/images/illustration.png" alt="computer" class="inline">
         </div>
         <div class="pl-16 pb-32 w-2/5">
             <span class="text-3xl font-bold text-indigo-dark">Welcome to Awesome App!</span>
@@ -13,7 +13,7 @@
                 Target your audience by exploring our features and
                 start using the platform!
             </p>
-            <button class="bg-blue hover:bg-blue-dark h-12 w-48 outline-none uppercase text-white text-xl font-bold rounded-lg" @click="$router.push({ name: 'reporting' })">
+            <button class="bg-blue-500 hover:bg-blue-600 h-12 w-48 outline-none uppercase text-white text-xl font-bold rounded-lg" @click="$router.push({ name: 'reporting' })">
                 Continue
             </button>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-5xl font-bold text-primary text-center my-8">Awesome App</div>
+        <div class="text-5xl font-bold text-blue-500 text-center my-8">Awesome App</div>
         <div
                 v-loading="$wait.waiting('authState/login')"
                 class="login-form bg-white h-full rounded border border-grey-dark"

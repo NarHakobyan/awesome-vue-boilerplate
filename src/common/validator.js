@@ -26,3 +26,10 @@ Validator.extend('username_regex', {
         return strongRegex.test(value);
     },
 });
+
+Validator.extend('text_regex', {
+    validate: value => {
+        var strongRegex = new RegExp('^\\S+(?: \\S+)*$');
+        return strongRegex.test(value);
+    },
+});
